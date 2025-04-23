@@ -1087,14 +1087,10 @@ footer {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Add this to the end of your existing Jamzone.css file */
-
-/* Carousel Navigation - Hide all navigation arrows by default */
 .carousel-nav label {
   display: none;
 }
 
-/* Show the appropriate navigation arrows based on which slide is active */
 /* Carousel 1 */
 #slide1-1:checked ~ .carousel-nav .slide1-prev-from-1,
 #slide1-2:checked ~ .carousel-nav .slide1-prev-from-2,

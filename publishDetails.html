@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Publish Game Details</title>
+    <link rel="stylesheet" href="Jamzone.css">
+    <style>
+        .publish-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            background-color: #36454f;
+            border: 1px solid #5a6b73;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 12px;
+            padding-right: 30px;
+        }
+        
+        .form-help {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        .url-preview {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #36454f;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .toggle-slider {
+            background-color: #14c7c4;
+        }
+        
+        input:checked + .toggle-slider:before {
+            transform: translateX(26px);
+        }
+        
+        .partner-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #5a6b73;
+            margin: 40px 0;
+        }
+        
+        .publish-buttons {
+            
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 70px;
+        }
+        
+        .publish-buttons a {
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .publish-buttons a.save {
+            background-color: #14c7c4;
+            color: black;
+        }
+        
+        .publish-buttons a.save:hover {
+            transform: scale(1.05);
+        }
+        
+        .publish-buttons a.back {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        
+        .publish-buttons a.back:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="Jamzone.html">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="action.html">ACTION</a></li>
+                        <li><a href="roleplay.html">ROLEPLAY</a></li>
+                        <li><a href="adventure.html">ADVENTURE</a></li>
+                        <li><a href="strategy.html">STRATEGY</a></li>
+                        <li><a href="simulation.html">SIMULATION</a></li>
+                        <li><a href="sports.html">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="publish.html">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="topSection">
+            <h1>PUBLISH YOUR GAME</h1>
+            <p>Enter your game details</p>
+        </section>
+        
+        <section class="publish-container">
+            <h2 style="font-family: 'Bungee', sans-serif; margin-bottom: 30px;">Add a Game</h2>
+            
+            <form>
+                <div class="form-group">
+                    <label for="game-title">Title</label>
+                    <input type="text" id="game-title" name="game-title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="url-path">URL Path</label>
+                    <input type="text" id="url-path" name="url-path" required>
+                    <div class="url-preview">
+                        <span>Customize your game page URLs. Make them really pretty.</span>
+                    </div>
+                    <div class="url-preview">
+                        <span>Game Page URL: </span>
+                        <span style="color: white; margin-left: 5px;">jamzone.com/_/</span>
+                        <span id="url-preview-text">your-game</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="website">Website (optional)</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                
+                <div class="form-group">
+                    <label for="engine">Engine/Language/Creation Tool</label>
+                    <select id="engine" name="engine">
+                        <option value="" selected disabled>Select an engine/language/tool...</option>
+                        <option value="unity">Unity</option>
+                        <option value="unreal">Unreal Engine</option>
+                        <option value="godot">Godot</option>
+                        <option value="gamemaker">GameMaker</option>
+                        <option value="construct">Construct</option>
+                        <option value="rpgmaker">RPG Maker</option>
+                        <option value="html5">HTML5</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="csharp">C#</option>
+                        <option value="cpp">C++</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="publish-buttons">
+                    <a href="publish.html" class="back">Back</a>
+                    <a href="#" class="save">Save & Next</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

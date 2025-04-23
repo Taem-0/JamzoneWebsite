@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Simulation Games</title>
+    <link rel="stylesheet" href="Jamzone.css">
+</head>
+
+<body>
+    <header>
+      <div id="topHeader">
+          <div id="headerContainer">
+              <div id="headerLogoContainer">
+                  <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+              </div>
+              <ul id="navLinks">
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+              </ul>
+          </div>
+      </div>
+      <div id="bottomHeader">
+          <ul>
+              <li><a href="Jamzone.html">HOME</a></li>
+      
+              <li id="gamesDropDown">
+                  <a href="JamzoneGamePage.html">GAMES</a> 
+                  <ul class="dropdown">
+                      <li><a href="action.html">ACTION</a></li>
+                      <li><a href="roleplay.html">ROLEPLAY</a></li>
+                      <li><a href="adventure.html">ADVENTURE</a></li>
+                      <li><a href="strategy.html">STRATEGY</a></li>
+                      <li><a href="simulation.html">SIMULATION</a></li>
+                      <li><a href="sports.html">SPORTS & RACING</a></li>
+                  </ul>
+              </li>
+      
+              <li><a href="publish.html">PUBLISH</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="topSection">
+        <h1>SIMULATION GAMES</h1>
+      
+        <div id="genreSelect">
+          <ul>
+            <li><a href="action.html">ACTION</a></li>
+            <li><a href="roleplay.html">ROLEPLAY</a></li>
+            <li><a href="strategy.html">STRATEGY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="simulation.html">SIMULATION</a></li>
+            <li><a href="sports.html">SPORTS & RACING</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="filterBarSection">
+        <div id="filterBar">
+          <div id="topBar">
+            <ul>
+              <li><a href="#">FEATURED</a></li>
+              <li><a href="#">HOT</a></li>
+              <li><a href="#">BEST</a></li>
+              <li><a href="#">NEW</a></li>
+            </ul>
+          </div>
+      
+          <div id="bottomBar">
+            <ul>
+              <li id="priceDropDown">
+                <a href="#">PRICE</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="free-name-your-price">
+                      Free/Name your price
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="on-sale">
+                      On sale
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="paid">
+                      Paid
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="300-or-less">
+                      ₱300 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="900-or-less">
+                      ₱900 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="1700-or-less">
+                      ₱1700 or less
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="osDropDown">
+                <a href="#">OS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="windows">
+                      Windows
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="mac">
+                      Mac
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="linux">
+                      Linux
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="maturityDropDown">
+                <a href="#">MATURITY</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="all-ages">
+                      All Ages
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="teen-content">
+                      Teen Content
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="mature-content">
+                      Mature Content
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="statusDropDown">
+                <a href="#">STATUS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="complete">
+                      Complete
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="early-access">
+                      Early Access
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="devlog">
+                      Devlog
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>     
+
+      <section id="gameCardSection">
+        <div id="gameCardList">
+          <!-- Simulation Games -->
+          <!-- Game Card 1 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide1" id="slide1-1" checked>
+              <input type="radio" name="slide1" id="slide1-2">
+              <input type="radio" name="slide1" id="slide1-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/warThunder.jpg" alt="Cruelty Squad screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/warThunder2.jpg" alt="Cruelty Squad screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/warThunder3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide1-3" class="prev slide1-prev-from-1">&#10094;</label>
+                <label for="slide1-1" class="prev slide1-prev-from-2">&#10094;</label>
+                <label for="slide1-2" class="prev slide1-prev-from-3">&#10094;</label>
+                <label for="slide1-2" class="next slide1-next-from-1">&#10095;</label>
+                <label for="slide1-3" class="next slide1-next-from-2">&#10095;</label>
+                <label for="slide1-1" class="next slide1-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>WAR THUNDER</h1>
+              <ul>
+                <li>FLIGHT</li>
+                <li>SIMULATION</li>
+                <li>VEHICULAR COMBAT</li>
+              </ul>
+              <p>War Thunder is the most comprehensive free-to-play, cross-platform, MMO military game dedicated to aviation, armoured vehicles, and naval craft, from the early 20th century to the most advanced modern combat units. Join now and take part in major battles on land, in the air, and at sea.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 2 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide2" id="slide2-1" checked>
+              <input type="radio" name="slide2" id="slide2-2">
+              <input type="radio" name="slide2" id="slide2-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/DCS.jpg" alt="Raw Metal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/DCS2.jpg" alt="Raw Metal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/DCS3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide2-3" class="prev slide2-prev-from-1">&#10094;</label>
+                <label for="slide2-1" class="prev slide2-prev-from-2">&#10094;</label>
+                <label for="slide2-2" class="prev slide2-prev-from-3">&#10094;</label>
+                <label for="slide2-2" class="next slide2-next-from-1">&#10095;</label>
+                <label for="slide2-3" class="next slide2-next-from-2">&#10095;</label>
+                <label for="slide2-1" class="next slide2-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>DCS</h1>
+              <ul>
+                <li>FLIGHT</li>
+                <li>SIMULATION</li>
+                <li>MILITARY</li>
+              </ul>
+              <p>Feel the excitement of flying the Su-25T "Frogfoot" attack jet and the TF-51D "Mustang" in the free-to-play Digital Combat Simulator World!</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 3 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide3" id="slide3-1" checked>
+              <input type="radio" name="slide3" id="slide3-2">
+              <input type="radio" name="slide3" id="slide3-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/theSims.jpg" alt="Deep Rock Galactic screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/theSims2.jpg" alt="Deep Rock Galactic screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/theSims3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide3-3" class="prev slide3-prev-from-1">&#10094;</label>
+                <label for="slide3-1" class="prev slide3-prev-from-2">&#10094;</label>
+                <label for="slide3-2" class="prev slide3-prev-from-3">&#10094;</label>
+                <label for="slide3-2" class="next slide3-next-from-1">&#10095;</label>
+                <label for="slide3-3" class="next slide3-next-from-2">&#10095;</label>
+                <label for="slide3-1" class="next slide3-next-from-3">&#10095;</label>
+              </div>
+            </div>
+            
+            <div class="cardText">
+              <h1>THE SIMS 4</h1>
+              <ul>
+                <li>LIFE SIM</li>
+                <li>SIMULATION</li>
+                <li>CHARACTER CUSTOMIZATION</li>
+              </ul>
+              <p>Play with life and discover the possibilities. Unleash your imagination and create a world of Sims that's wholly unique. Explore and customize every detail from Sims to homes–and much more.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 4 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide4" id="slide4-1" checked>
+              <input type="radio" name="slide4" id="slide4-2">
+              <input type="radio" name="slide4" id="slide4-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Aviassembly.jpg" alt="Doom Eternal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Aviassembly2.jpg" alt="Doom Eternal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Aviassembly3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide4-3" class="prev slide4-prev-from-1">&#10094;</label>
+                <label for="slide4-1" class="prev slide4-prev-from-2">&#10094;</label>
+                <label for="slide4-2" class="prev slide4-prev-from-3">&#10094;</label>
+                <label for="slide4-2" class="next slide4-next-from-1">&#10095;</label>
+                <label for="slide4-3" class="next slide4-next-from-2">&#10095;</label>
+                <label for="slide4-1" class="next slide4-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>AVIASSEMBLY</h1>
+              <ul>
+                <li>FLIGHT</li>
+                <li>SIMULATION</li>
+                <li>PHYSICS</li>
+              </ul>
+              <p>Build and fly your own airplane! Complete missions to earn money, upgrade your plane, and discover new locations in an open world.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 5 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide5" id="slide5-1" checked>
+              <input type="radio" name="slide5" id="slide5-2">
+              <input type="radio" name="slide5" id="slide5-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/xplane.jpg" alt="Elden Ring screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/xplane2.jpg" alt="Elden Ring screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/xplane3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide5-3" class="prev slide5-prev-from-1">&#10094;</label>
+                <label for="slide5-1" class="prev slide5-prev-from-2">&#10094;</label>
+                <label for="slide5-2" class="prev slide5-prev-from-3">&#10094;</label>
+                <label for="slide5-2" class="next slide5-next-from-1">&#10095;</label>
+                <label for="slide5-3" class="next slide5-next-from-2">&#10095;</label>
+                <label for="slide5-1" class="next slide5-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>X-PLANE 11</h1>
+              <ul>
+                <li>FLIGHT</li>
+                <li>SIMULATION</li>
+                <li>REALISTIC</li>
+              </ul>
+              <p>The future of flight simulation is now! X-Plane 11 is the detailed, realistic, and modern simulator you've been waiting for. Intuitive user interface, 3-D cockpits, new effects, 3-D sound, living airports and world-wide scenery</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 6 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide6" id="slide6-1" checked>
+              <input type="radio" name="slide6" id="slide6-2">
+              <input type="radio" name="slide6" id="slide6-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/euroTruck.jpg" alt="Devil May Cry 5 screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/euroTruck2.jpg" alt="Devil May Cry 5 screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/euroTruck3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide6-3" class="prev slide6-prev-from-1">&#10094;</label>
+                <label for="slide6-1" class="prev slide6-prev-from-2">&#10094;</label>
+                <label for="slide6-2" class="prev slide6-prev-from-3">&#10094;</label>
+                <label for="slide6-2" class="next slide6-next-from-1">&#10095;</label>
+                <label for="slide6-3" class="next slide6-next-from-2">&#10095;</label>
+                <label for="slide6-1" class="next slide6-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>EURO TRUCK SIMULATOR 2</h1>
+              <ul>
+                <li>TRANSPORTATION</li>
+                <li>SIMULATION</li>
+                <li>OPEN WORLD</li>
+              </ul>
+              <p>Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 7 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide7" id="slide7-1" checked>
+              <input type="radio" name="slide7" id="slide7-2">
+              <input type="radio" name="slide7" id="slide7-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/TCGshop.jpg" alt="Ghostrunner screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/TCGshop2.jpg" alt="Ghostrunner screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/TCGshop3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide7-3" class="prev slide7-prev-from-1">&#10094;</label>
+                <label for="slide7-1" class="prev slide7-prev-from-2">&#10094;</label>
+                <label for="slide7-2" class="prev slide7-prev-from-3">&#10094;</label>
+                <label for="slide7-2" class="next slide7-next-from-1">&#10095;</label>
+                <label for="slide7-3" class="next slide7-next-from-2">&#10095;</label>
+                <label for="slide7-1" class="next slide7-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>TCG CARD SHOP SIMULATOR</h1>
+              <ul>
+                <li>MANAGEMENT</li>
+                <li>SIMULATION</li>
+                <li>COLLECTATHON</li>
+              </ul>
+              <p>Open your own local game store. Stock shelves with the latest booster packs, or crack them and collect the cards for yourself. Set your own prices, hire staff, host events, and expand your card shop.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 8 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide8" id="slide8-1" checked>
+              <input type="radio" name="slide8" id="slide8-2">
+              <input type="radio" name="slide8" id="slide8-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/dwarfFORT.jpg" alt="Hotline Miami screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/dwarfFORT2.jpg" alt="Hotline Miami screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/dwarfFORT3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide8-3" class="prev slide8-prev-from-1">&#10094;</label>
+                <label for="slide8-1" class="prev slide8-prev-from-2">&#10094;</label>
+                <label for="slide8-2" class="prev slide8-prev-from-3">&#10094;</label>
+                <label for="slide8-2" class="next slide8-next-from-1">&#10095;</label>
+                <label for="slide8-3" class="next slide8-next-from-2">&#10095;</label>
+                <label for="slide8-1" class="next slide8-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>DWARF FORTRESS</h1>
+              <ul>
+                <li>DWARF</li>
+                <li>SIMULATION</li>
+                <li>COLONY SIM</li>
+              </ul>
+              <p>The deepest, most intricate simulation of a world that's ever been created. The legendary Dwarf Fortress is now on Steam. Build a fortress and try to help your dwarves survive against a deeply generated world.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 9 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/StarDew.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/StarDew2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/StarDew3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>STARDEW VALLEY  </h1>
+              <ul>
+                <li>PIXEL GRAPHICS</li>
+                <li>SIMULATION</li>
+                <li>FARMING</li>
+              </ul>
+              <p>You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 10 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide10" id="slide10-1" checked>
+              <input type="radio" name="slide10" id="slide10-2">
+              <input type="radio" name="slide10" id="slide10-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/foxhole.jpg" alt="Metal Gear Rising screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/foxhole2.jpg" alt="Metal Gear Rising screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/foxhole3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide10-3" class="prev slide10-prev-from-1">&#10094;</label>
+                <label for="slide10-1" class="prev slide10-prev-from-2">&#10094;</label>
+                <label for="slide10-2" class="prev slide10-prev-from-3">&#10094;</label>
+                <label for="slide10-2" class="next slide10-next-from-1">&#10095;</label>
+                <label for="slide10-3" class="next slide10-next-from-2">&#10095;</label>
+                <label for="slide10-1" class="next slide10-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>FOXHOLE</h1>
+              <ul>
+                <li>MASSIVE MULTIPLAYER</li>
+                <li>SIMULATION</li>
+                <li>WAR</li>
+              </ul>
+              <p>Foxhole is a massively multiplayer game where thousands of players shape the outcome of a persistent online war. Every individual soldier is a player that contributes to the war effort through logistics, base building, reconnaissance, combat, and more.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="arrow">‹</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="arrow">›</a>
+      </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

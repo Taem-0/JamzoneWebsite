@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Publish Your Game</title>
+    <link rel="stylesheet" href="Jamzone.css">
+    <style>
+        .publish-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .development-stage {
+            background-color: #36454f;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .development-stage:hover {
+            background-color: #4a5a65;
+        }
+        
+        .stage-info {
+            flex: 1;
+        }
+        
+        .stage-icon {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .stage-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .stage-title h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .development-stage.selected .radio-circle::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #14c7c4;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .development-stage.selected {
+            border: 2px solid #14c7c4;
+        }
+        
+        .publish-button {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+        
+        .publish-button a {
+            background-color: #14c7c4;
+            color: black;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .publish-button a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="Jamzone.html">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="action.html">ACTION</a></li>
+                        <li><a href="roleplay.html">ROLEPLAY</a></li>
+                        <li><a href="adventure.html">ADVENTURE</a></li>
+                        <li><a href="strategy.html">STRATEGY</a></li>
+                        <li><a href="simulation.html">SIMULATION</a></li>
+                        <li><a href="sports.html">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="publish.html">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="topSection">
+            <h1>PUBLISH YOUR GAME</h1>
+            <p>Share your creation with the JAMZONE community</p>
+        </section>
+        
+        <section class="publish-container">
+            <h2 style="font-family: 'Bungee', sans-serif; margin-bottom: 20px;">Add a Game</h2>
+            <p style="margin-bottom: 30px;">Choose the stage of development that your game is currently in. You are able to change your development stage at any point.</p>
+            
+            <div class="development-stage selected" onclick="selectStage(this)">
+                <div class="stage-info">
+                    <div class="stage-title">
+                        <span class="radio-circle"></span>
+                        <h3>Devlog-Only</h3>
+                    </div>
+                    <p>You don't have anything playable yet, but would like to share active game development in the form of images, videos, posts and more.</p>
+                </div>
+            </div>
+            
+            <div class="development-stage" onclick="selectStage(this)">
+                <div class="stage-info">
+                    <div class="stage-title">
+                        <span class="radio-circle"></span>
+                        <h3>Early Access</h3>
+                    </div>
+                    <p>Your game has playable builds, but you're still actively developing it.</p>
+                </div>
+            </div>
+            
+            <div class="development-stage" onclick="selectStage(this)">
+                <div class="stage-info">
+                    <div class="stage-title">
+                        <span class="radio-circle"></span>
+                        <h3>Complete/Stable</h3>
+                    </div>
+                    <p>Your game is complete. It's in a stable state and you only plan on making bug fixes, performance optimizations, or small improvements.</p>
+                </div>
+            </div>
+            
+            <div class="publish-button">
+                <a href="publishDetails.html">Continue</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectStage(element) {
+            // Remove selected class from all stages
+            document.querySelectorAll('.development-stage').forEach(stage => {
+                stage.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked stage
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Login</title>
+    <link rel="stylesheet" href="Jamzone.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="Jamzone.html">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                  <li><a href="aboutus.html">ABOUT US</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="login.html" class="active">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="action.html">ACTION</a></li>
+                        <li><a href="roleplay.html">ROLEPLAY</a></li>
+                        <li><a href="adventure.html">ADVENTURE</a></li>
+                        <li><a href="strategy.html">STRATEGY</a></li>
+                        <li><a href="simulation.html">SIMULATION</a></li>
+                        <li><a href="sports.html">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="publish.html">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="login-main">
+        <div class="auth-container">
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form">
+                <div class="auth-logo">
+                    <h1>JAMZONE</h1>
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="login-username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="auth-button">Log In</button>
+                </form>
+                
+                
+                <div class="auth-links">
+                    <a href="#" class="help-link">Having trouble logging in?</a>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign up!</a></p>
+                </div>
+            </div>
+            
+            <!-- Sign Up Form -->
+            <div id="signup-form" class="auth-form hidden">
+                <div class="auth-logo">
+                    <h1>JAMZONE</h1>
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="signup-username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="auth-button">Sign Up</button>
+                </form>
+                
+                
+                <div class="auth-links">
+                    <p>Already have an account? <a href="#" id="show-login">Log in!</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

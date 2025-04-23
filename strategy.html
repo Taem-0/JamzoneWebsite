@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Strategy Games</title>
+    <link rel="stylesheet" href="Jamzone.css">
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                  <li><a href="aboutus.html">ABOUT US</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="action.html">ACTION</a></li>
+                        <li><a href="roleplay.html">ROLEPLAY</a></li>
+                        <li><a href="adventure.html">ADVENTURE</a></li>
+                        <li><a href="strategy.html">STRATEGY</a></li>
+                        <li><a href="simulation.html">SIMULATION</a></li>
+                        <li><a href="sports.html">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="publish.html">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+      <section id="topSection">
+        <h1>STRATEGY GAMES</h1>
+      
+        <div id="genreSelect">
+          <ul>
+            <li><a href="action.html">ACTION</a></li>
+            <li><a href="roleplay.html">ROLEPLAY</a></li>
+            <li><a href="strategy.html">STRATEGY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="simulation.html">SIMULATION</a></li>
+            <li><a href="sports.html">SPORTS & RACING</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="filterBarSection">
+        <div id="filterBar">
+          <div id="topBar">
+            <ul>
+              <li><a href="#">FEATURED</a></li>
+              <li><a href="#">HOT</a></li>
+              <li><a href="#">BEST</a></li>
+              <li><a href="#">NEW</a></li>
+            </ul>
+          </div>
+      
+          <div id="bottomBar">
+            <ul>
+              <li id="priceDropDown">
+                <a href="#">PRICE</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="free-name-your-price">
+                      Free/Name your price
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="on-sale">
+                      On sale
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="paid">
+                      Paid
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="300-or-less">
+                      ₱300 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="900-or-less">
+                      ₱900 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="1700-or-less">
+                      ₱1700 or less
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="osDropDown">
+                <a href="#">OS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="windows">
+                      Windows
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="mac">
+                      Mac
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="linux">
+                      Linux
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="maturityDropDown">
+                <a href="#">MATURITY</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="all-ages">
+                      All Ages
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="teen-content">
+                      Teen Content
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="mature-content">
+                      Mature Content
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="statusDropDown">
+                <a href="#">STATUS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="complete">
+                      Complete
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="early-access">
+                      Early Access
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="devlog">
+                      Devlog
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>     
+
+      <section id="gameCardSection">
+        <div id="gameCardList">
+          <!-- Strategy Games -->
+          <!-- Game Card 1 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>INTO THE BREACH</h1>
+              <ul>
+                <li>STRATEGY</li>
+                <li>TURN-BASED</li>
+                <li>MECHS</li>
+              </ul>
+              <p>Control powerful mechs from the future to defeat an alien threat. Each attempt to save the world presents a new randomly generated challenge in this turn-based strategy game.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 2 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>FACTORIO</h1>
+              <ul>
+                <li>AUTOMATION</li>
+                <li>STRATEGY</li>
+                <li>BASE BUILDING</li>
+              </ul>
+              <p>Factorio is a game about building and creating automated factories to produce items of increasing complexity, within an infinite 2D world. Use your imagination to design your factory, combine simple elements into ingenious structures, and finally protect it from the creatures who don't really like you.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 3 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>BALATRO </h1>
+              <ul>
+                <li>CARD GAME</li>
+                <li>STRATEGY</li>
+                <li>ROUGELIKE</li>
+              </ul>
+              <p>The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-pumping, outrageous combos.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 4 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>DUAL GEAR</h1>
+              <ul>
+                <li>MECHS</li>
+                <li>STRATEGY</li>
+                <li>TURN-BASED</li>
+              </ul>
+              <p>Frostpunk is a city-building survival game where heat means life and every decision comes at a price. As the ruler of the last city on Earth, it falls to you to manage both its citizens and the infrastructure. What will you do when pushed to breaking point? Who will you become in the process?</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 5 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>FIGHTS IN TIGHT SPACES  </h1>
+              <ul>
+                <li>MARTIAL ARTS</li>
+                <li>STRATEGY</li>
+                <li>DECKBUILDING</li>
+              </ul>
+              <p>A stylish blend of deck-building, turn-based tactics, and thrilling animated fight sequences in classic action-movie settings. Learn to balance your hand, momentum, and positioning to overcome the odds to defeat your adversaries. Build your deck, control the space and live to fight another day.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 6 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>RUSTED WARFARE - RTS</h1>
+              <ul>
+                <li>RTS</li>
+                <li>STRATEGY</li>
+                <li>BASE BUILDING</li>
+              </ul>
+              <p>{{An RTS inspired by the classics of the past!}} Making up for it's subpar retro graphics with fun gameplay and modern multi-threaded tech enabling huge battles to run smooth... Featuring singleplayer challenges, skirmish, sandbox, 10-player multiplayer & workshop modding.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 7 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>SLAY THE SPIRE</h1>
+              <ul>
+                <li>ROUGELIKE</li>
+                <li>STRATEGY</li>
+                <li>CARD BATTLER</li>
+              </ul>
+              <p>Paradox Development Studio brings you the sequel to one of the most popular strategy games ever made. Crusader Kings III is the heir to a long legacy of historical grand strategy experiences and arrives with a host of new ways to ensure the success of your royal house.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 8 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>CARRIER COMMAND 2</h1>
+              <ul>
+                <li>RTS</li>
+                <li>STRATEGY</li>
+                <li>WAR</li>
+              </ul>
+              <p>Carrier Command 2 is the real-time strategy game that puts you in command of a futuristic carrier capable of deploying a vast array of aircraft and amphibious units. Compete against AI or human players and hop into every single vehicle to take matters into your own hands!</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 9 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>MINI MOTORWAYS</h1>
+              <ul>
+                <li>CASUAL</li>
+                <li>STRATEGY</li>
+                <li>MINIMALIST</li>
+              </ul>
+              <p>Mini Motorways is a strategy simulation game about designing the road map for a growing city. Build a traffic network, one road at a time, to create a bustling metropolis. Redesign your roads and place your motorways to get everyone where they need to go. How long can you keep the city moving?</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 10 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/ForeverWinter3.jpg" alt="Sky Rouge screenshot 3">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>MECH ENGINEER</h1>
+              <ul>
+                <li>MANAGEMENT</li>
+                <li>STRATEGY</li>
+                <li>MECHS</li>
+              </ul>
+              <p>A dark sci-fi mech assembling manager with semi-auto battles against mutating, alien bio-weapon.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="arrow">‹</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="arrow">›</a>
+      </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

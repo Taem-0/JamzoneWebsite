@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Adventure Games</title>
+    <link rel="stylesheet" href="Jamzone.css">
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                  <li><a href="aboutus.html">ABOUT US</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="action.html">ACTION</a></li>
+                        <li><a href="roleplay.html">ROLEPLAY</a></li>
+                        <li><a href="adventure.html">ADVENTURE</a></li>
+                        <li><a href="strategy.html">STRATEGY</a></li>
+                        <li><a href="simulation.html">SIMULATION</a></li>
+                        <li><a href="sports.html">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="#">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+      <section id="topSection">
+        <h1>ADVENTURE GAMES</h1>
+      
+        <div id="genreSelect">
+          <ul>
+            <li><a href="action.html">ACTION</a></li>
+            <li><a href="roleplay.html">ROLEPLAY</a></li>
+            <li><a href="strategy.html">STRATEGY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="simulation.html">SIMULATION</a></li>
+            <li><a href="sports.html">SPORTS & RACING</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="filterBarSection">
+        <div id="filterBar">
+          <div id="topBar">
+            <ul>
+              <li><a href="#">FEATURED</a></li>
+              <li><a href="#">HOT</a></li>
+              <li><a href="#">BEST</a></li>
+              <li><a href="#">NEW</a></li>
+            </ul>
+          </div>
+      
+          <div id="bottomBar">
+            <ul>
+              <li id="priceDropDown">
+                <a href="#">PRICE</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="free-name-your-price">
+                      Free/Name your price
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="on-sale">
+                      On sale
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="paid">
+                      Paid
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="300-or-less">
+                      ₱300 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="900-or-less">
+                      ₱900 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="1700-or-less">
+                      ₱1700 or less
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="osDropDown">
+                <a href="#">OS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="windows">
+                      Windows
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="mac">
+                      Mac
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="linux">
+                      Linux
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="maturityDropDown">
+                <a href="#">MATURITY</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="all-ages">
+                      All Ages
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="teen-content">
+                      Teen Content
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="mature-content">
+                      Mature Content
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="statusDropDown">
+                <a href="#">STATUS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="complete">
+                      Complete
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="early-access">
+                      Early Access
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="devlog">
+                      Devlog
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>     
+
+      <section id="gameCardSection">
+        <div id="gameCardList">
+          <!-- Adventure Games -->
+          <!-- Game Card 1 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide1" id="slide1-1" checked>
+              <input type="radio" name="slide1" id="slide1-2">
+              <input type="radio" name="slide1" id="slide1-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/BombRush.jpg" alt="Cruelty Squad screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/BombRush2.jpg" alt="Cruelty Squad screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/BombRush3.jpg">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide1-3" class="prev slide1-prev-from-1">&#10094;</label>
+                <label for="slide1-1" class="prev slide1-prev-from-2">&#10094;</label>
+                <label for="slide1-2" class="prev slide1-prev-from-3">&#10094;</label>
+                <label for="slide1-2" class="next slide1-next-from-1">&#10095;</label>
+                <label for="slide1-3" class="next slide1-next-from-2">&#10095;</label>
+                <label for="slide1-1" class="next slide1-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>BOMB RUSH CYBERFUNK</h1>
+              <ul>
+                <li>PLATFORMER</li>
+                <li>ADVENTURE</li>
+                <li>STYLIZED</li>
+              </ul>
+              <p>Bomb Rush Cyberfunk is 1 second per second of advanced funkstyle. Battle rival crews and dispatch militarized police to conquer the five boroughs of New Amsterdam. Become All City.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 2 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide2" id="slide2-1" checked>
+              <input type="radio" name="slide2" id="slide2-2">
+              <input type="radio" name="slide2" id="slide2-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/OuterWilds.jpg" alt="Raw Metal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/OuterWilds2.jpg" alt="Raw Metal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/OuterWilds3.jpg">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide2-3" class="prev slide2-prev-from-1">&#10094;</label>
+                <label for="slide2-1" class="prev slide2-prev-from-2">&#10094;</label>
+                <label for="slide2-2" class="prev slide2-prev-from-3">&#10094;</label>
+                <label for="slide2-2" class="next slide2-next-from-1">&#10095;</label>
+                <label for="slide2-3" class="next slide2-next-from-2">&#10095;</label>
+                <label for="slide2-1" class="next slide2-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>OUTER WILDS</h1>
+              <ul>
+                <li>EXPLORATION</li>
+                <li>ADVENTURE</li>
+                <li>SPACE</li>
+              </ul>
+              <p>Named Game of the Year 2019 by Giant Bomb, Polygon, Eurogamer, and The Guardian, Outer Wilds is a critically-acclaimed and award-winning open world mystery about a solar system trapped in an endless time loop.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 3 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide3" id="slide3-1" checked>
+              <input type="radio" name="slide3" id="slide3-2">
+              <input type="radio" name="slide3" id="slide3-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Dredge.jpg" alt="Deep Rock Galactic screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Dredge2.jpg" alt="Deep Rock Galactic screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Dredge3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide3-3" class="prev slide3-prev-from-1">&#10094;</label>
+                <label for="slide3-1" class="prev slide3-prev-from-2">&#10094;</label>
+                <label for="slide3-2" class="prev slide3-prev-from-3">&#10094;</label>
+                <label for="slide3-2" class="next slide3-next-from-1">&#10095;</label>
+                <label for="slide3-3" class="next slide3-next-from-2">&#10095;</label>
+                <label for="slide3-1" class="next slide3-next-from-3">&#10095;</label>
+              </div>
+            </div>
+            
+            <div class="cardText">
+              <h1>DREDGE</h1>
+              <ul>
+                <li>FISHING</li>
+                <li>ADVENTURE</li>
+                <li>LOVECRAFTIAN</li>
+              </ul>
+              <p>DREDGE is a single-player fishing adventure with a sinister undercurrent. Sell your catch, upgrade your boat, and dredge the depths for long-buried secrets. Explore a mysterious archipelago and discover why some things are best left forgotten.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 4 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide4" id="slide4-1" checked>
+              <input type="radio" name="slide4" id="slide4-2">
+              <input type="radio" name="slide4" id="slide4-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Stray.jpg" alt="Doom Eternal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Stray2.jpg" alt="Doom Eternal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Stray3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide4-3" class="prev slide4-prev-from-1">&#10094;</label>
+                <label for="slide4-1" class="prev slide4-prev-from-2">&#10094;</label>
+                <label for="slide4-2" class="prev slide4-prev-from-3">&#10094;</label>
+                <label for="slide4-2" class="next slide4-next-from-1">&#10095;</label>
+                <label for="slide4-3" class="next slide4-next-from-2">&#10095;</label>
+                <label for="slide4-1" class="next slide4-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>STRAY</h1>
+              <ul>
+                <li>CATS</li>
+                <li>ADVENTURE</li>
+                <li>CYBERPUNK</li>
+              </ul>
+              <p>Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten cybercity and find their way home.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 5 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide5" id="slide5-1" checked>
+              <input type="radio" name="slide5" id="slide5-2">
+              <input type="radio" name="slide5" id="slide5-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/HollowKnight.jpg" alt="Elden Ring screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HollowKnight2.jpg" alt="Elden Ring screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HollowKnight3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide5-3" class="prev slide5-prev-from-1">&#10094;</label>
+                <label for="slide5-1" class="prev slide5-prev-from-2">&#10094;</label>
+                <label for="slide5-2" class="prev slide5-prev-from-3">&#10094;</label>
+                <label for="slide5-2" class="next slide5-next-from-1">&#10095;</label>
+                <label for="slide5-3" class="next slide5-next-from-2">&#10095;</label>
+                <label for="slide5-1" class="next slide5-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>HOLLOW KNIGHT</h1>
+              <ul>
+                <li>METROIDVANIA</li>
+                <li>ADVENTURE</li>
+                <li>2D</li>
+              </ul>
+              <p>Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 6 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide6" id="slide6-1" checked>
+              <input type="radio" name="slide6" id="slide6-2">
+              <input type="radio" name="slide6" id="slide6-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Rainworld.jpg" alt="Devil May Cry 5 screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Rainworld2.jpg" alt="Devil May Cry 5 screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Rainworld3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide6-3" class="prev slide6-prev-from-1">&#10094;</label>
+                <label for="slide6-1" class="prev slide6-prev-from-2">&#10094;</label>
+                <label for="slide6-2" class="prev slide6-prev-from-3">&#10094;</label>
+                <label for="slide6-2" class="next slide6-next-from-1">&#10095;</label>
+                <label for="slide6-3" class="next slide6-next-from-2">&#10095;</label>
+                <label for="slide6-1" class="next slide6-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>RAIN WORLD</h1>
+              <ul>
+                <li>DIFFICULT</li>
+                <li>ADVENTURE</li>
+                <li>SURIVIVAL</li>
+                <li>EXPLORATION</li>
+              </ul>
+              <p>You are a nomadic slugcat, both predator and prey in a broken ecosystem. Grab your spear and brave the industrial wastes, hunting enough food to survive, but be wary— other, bigger creatures have the same plan... and slugcats look delicious.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 7 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide7" id="slide7-1" checked>
+              <input type="radio" name="slide7" id="slide7-2">
+              <input type="radio" name="slide7" id="slide7-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/AnimalWell.jpg" alt="Ghostrunner screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/AnimalWell2.jpg" alt="Ghostrunner screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/AnimalWell3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide7-3" class="prev slide7-prev-from-1">&#10094;</label>
+                <label for="slide7-1" class="prev slide7-prev-from-2">&#10094;</label>
+                <label for="slide7-2" class="prev slide7-prev-from-3">&#10094;</label>
+                <label for="slide7-2" class="next slide7-next-from-1">&#10095;</label>
+                <label for="slide7-3" class="next slide7-next-from-2">&#10095;</label>
+                <label for="slide7-1" class="next slide7-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>ANIMALWELL</h1>
+              <ul>
+                <li>METROIDVANIA</li>
+                <li>ADVENTURE</li>
+                <li>PUZZLE</li>
+              </ul>
+              <p>Explore a dense, interconnected labyrinth, and unravel its many secrets. Collect items to manipulate your environment in surprising and meaningful ways. Encounter beautiful and unsettling creatures, as you attempt to survive what lurks in the dark. There is more than what you see.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 8 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide8" id="slide8-1" checked>
+              <input type="radio" name="slide8" id="slide8-2">
+              <input type="radio" name="slide8" id="slide8-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/littleKitty.jpg" alt="Hotline Miami screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/littleKitty2.jpg" alt="Hotline Miami screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/littleKitty3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide8-3" class="prev slide8-prev-from-1">&#10094;</label>
+                <label for="slide8-1" class="prev slide8-prev-from-2">&#10094;</label>
+                <label for="slide8-2" class="prev slide8-prev-from-3">&#10094;</label>
+                <label for="slide8-2" class="next slide8-next-from-1">&#10095;</label>
+                <label for="slide8-3" class="next slide8-next-from-2">&#10095;</label>
+                <label for="slide8-1" class="next slide8-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>LITTLE KITTY, BIG CITY</h1>
+              <ul>
+                <li>CATS</li>
+                <li>ADVENTURE</li>
+                <li>SANDBOX</li>
+              </ul>
+              <p>You're a curious little kitty with a big personality, on an adventure to find your way back home. Explore the city, make new friends with stray animals, wear delightful hats, and leave more than a little chaos in your wake. After all, isn't that what cats do best?</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 9 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/seasonLetter.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/seasonLetter2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/seasonLetter3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>SEASON: A LETTER TO THE FUTURE</h1>
+              <ul>
+                <li>OPEN-WORLD</li>
+                <li>ADVENTURE</li>
+                <li>VISUAL NOVEL</li>
+              </ul>
+              <p>Leave home for the first time to collect memories before a mysterious cataclysm washes everything away. Ride, record, meet people, and unravel the strange world around you in this third-person meditative exploration game.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 10 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide10" id="slide10-1" checked>
+              <input type="radio" name="slide10" id="slide10-2">
+              <input type="radio" name="slide10" id="slide10-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Umurangi.jpg" alt="Metal Gear Rising screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Umurangi2.jpg" alt="Metal Gear Rising screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Umurangi3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide10-3" class="prev slide10-prev-from-1">&#10094;</label>
+                <label for="slide10-1" class="prev slide10-prev-from-2">&#10094;</label>
+                <label for="slide10-2" class="prev slide10-prev-from-3">&#10094;</label>
+                <label for="slide10-2" class="next slide10-next-from-1">&#10095;</label>
+                <label for="slide10-3" class="next slide10-next-from-2">&#10095;</label>
+                <label for="slide10-1" class="next slide10-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>UMURANGI GENERATION</h1>
+              <ul>
+                <li>CASUAL</li>
+                <li>ADVENTURE</li>
+                <li>PHOTO EDITING</li>
+                <li>SCI-FI</li>
+              </ul>
+              <p>Umurangi Generation is a first person photography game in the shitty future. Set in Tauranga Aotearoa off the back of an impending crisis you are a courier for the Tauranga Express. Throughout the game you will unlock a variety of lenses and equipment.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="arrow">‹</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="arrow">›</a>
+      </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

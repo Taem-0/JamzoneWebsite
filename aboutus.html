@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - About Us</title>
+    <link rel="stylesheet" href="Jamzone.css">
+    <style>
+        .about-container {
+            max-width: 830px;
+            margin: 0 auto;
+            margin-top: -55px;
+            padding: 0 20px;
+        }
+
+        .about-hero {
+            background-color: #14c7c4;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .about-hero h1 {
+            font-family: "Bungee", sans-serif;
+            font-size: clamp(3em, 10vw, 6em);
+            margin: 0;
+            color: black;
+            line-height: 1;
+        }
+
+        .about-content {
+            background-color: black;
+            padding: 40px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            font-family: "Bungee", sans-serif;
+            font-size: clamp(1.5em, 4vw, 2.5em);
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #fe5f03;
+        }
+
+        .about-row {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .about-cta {
+            background-color: #fe5f03;
+            padding: 40px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-cta-text h3 {
+            font-family: "Bungee", sans-serif;
+            font-size: clamp(0.5em, 2vw, 1em);
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .about-cta img {
+            max-width: 150px;
+        }
+
+        .about-links {
+            flex: 2;
+            background-color: #1f262a;
+
+        }
+
+        .about-links p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .about-links a {
+            color: #fe5f03;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .about-links a:hover {
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a>
+                    <ul class="dropdown">
+                        <li><a href="#">ACTION</a></li>
+                        <li><a href="#">ROLEPLAY</a></li>
+                        <li><a href="#">ADVENTURE</a></li>
+                        <li><a href="#">STRATEGY</a></li>
+                        <li><a href="#">SIMULATION</a></li>
+                        <li><a href="#">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="topSection">
+            <h1>JAMZONE</h1>
+        </section>
+
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-section">
+                    <p><span class="highlight">JAMZONE</span> is an indie game marketplace <span class="highlight">purpose and passion</span>, founded in 2023 by a team of dedicated gamers who believe in empowering independent game developers to reach their audience.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>OUR MISSION</h2>
+                    <p>Supporting video games being made with <span class="highlight">substance, quality, creativity, and fun</span> in mind is extremely important to us! The gaming scene can feel crowded or oversaturated, so our goal is to give great games a powerful way to stand out.</p>
+                    <p>Our mission is to discover and promote indie games that push boundaries and offer unique experiences to players around the world.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>OUR VISION</h2>
+                    <p>We love and deeply care about games, as well as artists and creatives in general. <span class="highlight">JAMZONE</span> is our way to foster and support those putting love into their projects to create the best they can — to give them the spotlight they deserve and <span class="highlight">see more of what we love in gaming</span>.</p>
+                    <p>Our vision is to build a thriving community where indie developers can showcase their talents, connect with players, and get the resources they need to bring their creative visions to life.</p>
+                </div>
+            </div>
+
+            <div class="about-row">
+                <div class="about-cta">
+                    <div class="about-cta-text">
+                        <h3>JOIN THE JAMZONE COMMUNITY</h3>
+                    </div>
+                    <img src="/placeholder.svg" alt="JAMZONE Mascot">
+                </div>
+
+                <div class="about-links">
+                    <p>If you’re an indie developer looking to share your game with the world, JAMZONE is your platform.</p>
+                    <p>We make it easy to upload your game, build your game's page, and connect with players who are passionate about creative and meaningful games. Whether your game is free, paid, early access, or a full release — JAMZONE gives it a space to shine.</p>
+                    <p>For questions or feedback, check out our <a href="contact.html">Contact</a> page.</p>
+                    <p>Want to support indie devs or discover your next favorite game? Start browsing today!</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Contact</title>
+    <link rel="stylesheet" href="Jamzone.css">
+    <style>
+        /* Additional styles for contact page */
+        .contact-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+            width: 100%;
+            max-width: 750px;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-header {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+        
+        .contact-header h1 {
+            font-family: "Bungee", sans-serif;
+            font-size: clamp(2.5em, 5vw, 4em);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .contact-header img {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .contact-rows-container {
+            width: 100%;
+            max-width: 750px;
+        }
+        
+        .contact-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-row {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        
+        .contact-category {
+            background-color: #14c7c4;
+            color: black;
+            font-family: "Bungee", sans-serif;
+            font-size: clamp(1.5em, 3vw, 2em);
+            border-radius: 15px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-category {
+                width: 400px; /* Increased from 300px to 400px */
+                height: 60px;
+                margin-bottom: 0;
+                margin-right: 30px;
+                flex-shrink: 0;
+            }
+        }
+        
+        .contact-email {
+            padding: 15px 0;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-email {
+                text-align: left;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                height: 60px;
+                padding: 0;
+            }
+        }
+        
+        .contact-email a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-email a:hover {
+            color: #14c7c4;
+        }
+        
+        .contact-note {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-note a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .contact-note a:hover {
+            color: #14c7c4;
+        }
+        
+        .contact-note span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="topHeader">
+            <div id="headerContainer">
+                <div id="headerLogoContainer">
+                    <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottomHeader">
+            <ul>
+                <li><a href="Jamzone.html">HOME</a></li>
+        
+                <li id="gamesDropDown">
+                    <a href="JamzoneGamePage.html">GAMES</a> 
+                    <ul class="dropdown">
+                        <li><a href="#">ACTION</a></li>
+                        <li><a href="#">ROLEPLAY</a></li>
+                        <li><a href="#">ADVENTURE</a></li>
+                        <li><a href="#">STRATEGY</a></li>
+                        <li><a href="#">SIMULATION</a></li>
+                        <li><a href="#">SPORTS & RACING</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="#">PUBLISH</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="topSection">
+            <h1>CONTACT US</h1>
+            <p>GET IN TOUCH WITH THE JAMZONE TEAM</p>
+        </section>
+
+        <div class="contact-container">
+            
+            <div class="contact-rows-container">
+                <div class="contact-row">
+                    <div class="contact-category">GENERAL</div>
+                    <div class="contact-email">
+                        <a href="mailto:contact@bigmode.com">contact@bigmode.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-row">
+                    <div class="contact-category">MEDIA</div>
+                    <div class="contact-email">
+                        <a href="mailto:media@bigmode.com">media@bigmode.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-row">
+                    <div class="contact-category">INVESTORS</div>
+                    <div class="contact-email">
+                        <a href="mailto:investments@bigmode.com">investments@bigmode.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-row">
+                    <div class="contact-category">NETWORKING</div>
+                    <div class="contact-email">
+                        <div class="contact-note">
+                            <a href="mailto:portfolios@bigmode.com">portfolios@bigmode.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

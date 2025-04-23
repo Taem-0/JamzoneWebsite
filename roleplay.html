@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Roleplay Games</title>
+    <link rel="stylesheet" href="Jamzone.css">
+</head>
+
+<body>
+    <header>
+      <div id="topHeader">
+          <div id="headerContainer">
+              <div id="headerLogoContainer">
+                  <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+              </div>
+              <ul id="navLinks">
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+              </ul>
+          </div>
+      </div>
+      <div id="bottomHeader">
+          <ul>
+              <li><a href="Jamzone.html">HOME</a></li>
+      
+              <li id="gamesDropDown">
+                  <a href="JamzoneGamePage.html">GAMES</a> 
+                  <ul class="dropdown">
+                      <li><a href="action.html">ACTION</a></li>
+                      <li><a href="roleplay.html">ROLEPLAY</a></li>
+                      <li><a href="adventure.html">ADVENTURE</a></li>
+                      <li><a href="strategy.html">STRATEGY</a></li>
+                      <li><a href="simulation.html">SIMULATION</a></li>
+                      <li><a href="sports.html">SPORTS & RACING</a></li>
+                  </ul>
+              </li>
+      
+              <li><a href="publish.html">PUBLISH</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="topSection">
+        <h1>ROLEPLAY GAMES</h1>
+      
+        <div id="genreSelect">
+          <ul>
+            <li><a href="action.html">ACTION</a></li>
+            <li><a href="roleplay.html">ROLEPLAY</a></li>
+            <li><a href="strategy.html">STRATEGY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="simulation.html">SIMULATION</a></li>
+            <li><a href="sports.html">SPORTS & RACING</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="filterBarSection">
+        <div id="filterBar">
+          <div id="topBar">
+            <ul>
+              <li><a href="#">FEATURED</a></li>
+              <li><a href="#">HOT</a></li>
+              <li><a href="#">BEST</a></li>
+              <li><a href="#">NEW</a></li>
+            </ul>
+          </div>
+      
+          <div id="bottomBar">
+            <ul>
+              <li id="priceDropDown">
+                <a href="#">PRICE</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="free-name-your-price">
+                      Free/Name your price
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="on-sale">
+                      On sale
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="paid">
+                      Paid
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="300-or-less">
+                      ₱300 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="900-or-less">
+                      ₱900 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="1700-or-less">
+                      ₱1700 or less
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="osDropDown">
+                <a href="#">OS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="windows">
+                      Windows
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="mac">
+                      Mac
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="linux">
+                      Linux
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="maturityDropDown">
+                <a href="#">MATURITY</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="all-ages">
+                      All Ages
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="teen-content">
+                      Teen Content
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="mature-content">
+                      Mature Content
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="statusDropDown">
+                <a href="#">STATUS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="complete">
+                      Complete
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="early-access">
+                      Early Access
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="devlog">
+                      Devlog
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>     
+
+      <section id="gameCardSection">
+        <div id="gameCardList">
+          <!-- Roleplay Games -->
+          <!-- Game Card 1 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide1" id="slide1-1" checked>
+              <input type="radio" name="slide1" id="slide1-2">
+              <input type="radio" name="slide1" id="slide1-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/discoelysium.jpg" alt="Cruelty Squad screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/discoelysium2.jpg" alt="Cruelty Squad screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/discoelysium3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide1-3" class="prev slide1-prev-from-1">&#10094;</label>
+                <label for="slide1-1" class="prev slide1-prev-from-2">&#10094;</label>
+                <label for="slide1-2" class="prev slide1-prev-from-3">&#10094;</label>
+                <label for="slide1-2" class="next slide1-next-from-1">&#10095;</label>
+                <label for="slide1-3" class="next slide1-next-from-2">&#10095;</label>
+                <label for="slide1-1" class="next slide1-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>DISCO ELYSIUM</h1>
+              <ul>
+                <li>DETECTIVE</li>
+                <li>RPG</li>
+                <li>STORY RICH</li>
+              </ul>
+              <p>An immersive power fantasy simulator with tactical stealth elements set in a sewage infused garbage world</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 2 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide2" id="slide2-1" checked>
+              <input type="radio" name="slide2" id="slide2-2">
+              <input type="radio" name="slide2" id="slide2-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Crabs.jpg" alt="Raw Metal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Crabs2.jpg" alt="Raw Metal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Crabs3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide2-3" class="prev slide2-prev-from-1">&#10094;</label>
+                <label for="slide2-1" class="prev slide2-prev-from-2">&#10094;</label>
+                <label for="slide2-2" class="prev slide2-prev-from-3">&#10094;</label>
+                <label for="slide2-2" class="next slide2-next-from-1">&#10095;</label>
+                <label for="slide2-3" class="next slide2-next-from-2">&#10095;</label>
+                <label for="slide2-1" class="next slide2-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>ANOTHER CRAB'S TREASURE</h1>
+              <ul>
+                <li>ACTION-RPG</li>
+                <li>RPG</li>
+                <li>SOULS-LIKE</li>
+              </ul>
+              <p>In a vibrant undersea kingdom on the verge of collapse, a hermit crab embarks on a treasure hunt to buy back his repossessed shell. The second game from AGGRO CRAB.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 3 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide3" id="slide3-1" checked>
+              <input type="radio" name="slide3" id="slide3-2">
+              <input type="radio" name="slide3" id="slide3-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/CrashLand.jpg" alt="Deep Rock Galactic screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/CrashLand2.jpg" alt="Deep Rock Galactic screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/CrashLand3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide3-3" class="prev slide3-prev-from-1">&#10094;</label>
+                <label for="slide3-1" class="prev slide3-prev-from-2">&#10094;</label>
+                <label for="slide3-2" class="prev slide3-prev-from-3">&#10094;</label>
+                <label for="slide3-2" class="next slide3-next-from-1">&#10095;</label>
+                <label for="slide3-3" class="next slide3-next-from-2">&#10095;</label>
+                <label for="slide3-1" class="next slide3-next-from-3">&#10095;</label>
+              </div>
+            </div>
+            
+            <div class="cardText">
+              <h1>CRASHLANDS</h1>
+              <ul>
+                <li>SURVIVAL</li>
+                <li>RPG</li>
+                <li>2D</li>
+              </ul>
+              <p>Deep Rock Galactic is a 1-4 player co-op FPS featuring badass space Dwarves, 100% destructible environments, procedurally-generated caves, and endless hordes of alien monsters.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 4 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide4" id="slide4-1" checked>
+              <input type="radio" name="slide4" id="slide4-2">
+              <input type="radio" name="slide4" id="slide4-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Hades.jpg" alt="Doom Eternal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Hades2.jpg" alt="Doom Eternal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Hades3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide4-3" class="prev slide4-prev-from-1">&#10094;</label>
+                <label for="slide4-1" class="prev slide4-prev-from-2">&#10094;</label>
+                <label for="slide4-2" class="prev slide4-prev-from-3">&#10094;</label>
+                <label for="slide4-2" class="next slide4-next-from-1">&#10095;</label>
+                <label for="slide4-3" class="next slide4-next-from-2">&#10095;</label>
+                <label for="slide4-1" class="next slide4-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>HADES</h1>
+              <ul>
+                <li>ROUGELIKE</li>
+                <li>RPG</li>
+                <li>HACK AND SLASH</li>
+              </ul>
+              <p>Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre. </p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 5 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide5" id="slide5-1" checked>
+              <input type="radio" name="slide5" id="slide5-2">
+              <input type="radio" name="slide5" id="slide5-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/MetalBring.jpg" alt="Elden Ring screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/MetalBring2.jpg" alt="Elden Ring screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/MetalBring3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide5-3" class="prev slide5-prev-from-1">&#10094;</label>
+                <label for="slide5-1" class="prev slide5-prev-from-2">&#10094;</label>
+                <label for="slide5-2" class="prev slide5-prev-from-3">&#10094;</label>
+                <label for="slide5-2" class="next slide5-next-from-1">&#10095;</label>
+                <label for="slide5-3" class="next slide5-next-from-2">&#10095;</label>
+                <label for="slide5-1" class="next slide5-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>METAL BRINGER</h1>
+              <ul>
+                <li>MECHS</li>
+                <li>ACTION-RPG</li>
+                <li>ROUGELIKE</li>
+              </ul>
+              <p>In this roguelike action-adventure, control humanoid "Labor" and giant "Arms" to uncover the mysteries of the world. Create fully-customizable robots, strengthen them, and take down hordes of enemies!</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 6 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide6" id="slide6-1" checked>
+              <input type="radio" name="slide6" id="slide6-2">
+              <input type="radio" name="slide6" id="slide6-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/UnderTale.jpg" alt="Devil May Cry 5 screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/UnderTale2.jpg" alt="Devil May Cry 5 screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/UnderTale3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide6-3" class="prev slide6-prev-from-1">&#10094;</label>
+                <label for="slide6-1" class="prev slide6-prev-from-2">&#10094;</label>
+                <label for="slide6-2" class="prev slide6-prev-from-3">&#10094;</label>
+                <label for="slide6-2" class="next slide6-next-from-1">&#10095;</label>
+                <label for="slide6-3" class="next slide6-next-from-2">&#10095;</label>
+                <label for="slide6-1" class="next slide6-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>UNDERTALE</h1>
+              <ul>
+                <li>STORY-RICH</li>
+                <li>RPG</li>
+                <li>2D</li>
+              </ul>
+              <p>The ultimate Devil Hunter is back in style, in the game action fans have been waiting for. The demonic invasion begins with the seeds of a "demon tree" taking root in Red Grave City. This hellish incursion attracts the attention of the young demon hunter Nero.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 7 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide7" id="slide7-1" checked>
+              <input type="radio" name="slide7" id="slide7-2">
+              <input type="radio" name="slide7" id="slide7-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Omori.jpg" alt="Ghostrunner screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Omori2.jpg" alt="Ghostrunner screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Omori3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide7-3" class="prev slide7-prev-from-1">&#10094;</label>
+                <label for="slide7-1" class="prev slide7-prev-from-2">&#10094;</label>
+                <label for="slide7-2" class="prev slide7-prev-from-3">&#10094;</label>
+                <label for="slide7-2" class="next slide7-next-from-1">&#10095;</label>
+                <label for="slide7-3" class="next slide7-next-from-2">&#10095;</label>
+                <label for="slide7-1" class="next slide7-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>OMORI</h1>
+              <ul>
+                <li>PSYCHOLOGICAL HORROR</li>
+                <li>RPG</li>
+                <li>STORY-RICH</li>
+              </ul>
+              <p>Explore a strange world full of colorful friends and foes. When the time comes, the path you've chosen will determine your fate... and perhaps the fate of others as well.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 8 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide8" id="slide8-1" checked>
+              <input type="radio" name="slide8" id="slide8-2">
+              <input type="radio" name="slide8" id="slide8-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/HyperLight.jpg" alt="Hotline Miami screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HyperLight2.jpg" alt="Hotline Miami screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HyperLight3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide8-3" class="prev slide8-prev-from-1">&#10094;</label>
+                <label for="slide8-1" class="prev slide8-prev-from-2">&#10094;</label>
+                <label for="slide8-2" class="prev slide8-prev-from-3">&#10094;</label>
+                <label for="slide8-2" class="next slide8-next-from-1">&#10095;</label>
+                <label for="slide8-3" class="next slide8-next-from-2">&#10095;</label>
+                <label for="slide8-1" class="next slide8-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>HYPER LIGHT DRIFTER</h1>
+              <ul>
+                <li>ATHMOSPERIC</li>
+                <li>RPG</li>
+                <li>PIXEL GRAPHICS</li>
+              </ul>
+              <p>Hotline Miami is a high-octane action game overflowing with raw brutality, hard-boiled gunplay and skull crushing close combat. Set in an alternative 1989 Miami, you will assume the role of a mysterious antihero on a murderous rampage against the shady underworld at the behest of voices on your answering machine.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 9 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/Hylics.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Hylics2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/Hylics3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>HYLICS</h1>
+              <ul>
+                <li>SURREAL</li>
+                <li>RPG</li>
+                <li>PSYCHEDELIC</li>
+              </ul>
+              <p>Game of the Year - The Game Awards 2019. Carve your own clever path to vengeance in an all-new adventure from developer FromSoftware. Take Revenge. Restore Your Honor. Kill Ingeniously.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 10 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide10" id="slide10-1" checked>
+              <input type="radio" name="slide10" id="slide10-2">
+              <input type="radio" name="slide10" id="slide10-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/SeaStars.jpg" alt="Metal Gear Rising screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/SeaStars2.jpg" alt="Metal Gear Rising screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/SeaStars3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide10-3" class="prev slide10-prev-from-1">&#10094;</label>
+                <label for="slide10-1" class="prev slide10-prev-from-2">&#10094;</label>
+                <label for="slide10-2" class="prev slide10-prev-from-3">&#10094;</label>
+                <label for="slide10-2" class="next slide10-next-from-1">&#10095;</label>
+                <label for="slide10-3" class="next slide10-next-from-2">&#10095;</label>
+                <label for="slide10-1" class="next slide10-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>SEA OF STARS</h1>
+              <ul>
+                <li>TURN-BASED</li>
+                <li>RPG</li>
+                <li>PIXEL GRAPHICS</li>
+              </ul>
+              <p>Sea of Stars is a turn-based RPG inspired by the classics. It tells the story of two Children of the Solstice who will combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fending off the monstrous creations of the evil alchemist known as The Fleshmancer.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="arrow">‹</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="arrow">›</a>
+      </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMZONE - Sports & Racing Games</title>
+    <link rel="stylesheet" href="Jamzone.css">
+</head>
+
+<body>
+    <header>
+      <div id="topHeader">
+          <div id="headerContainer">
+              <div id="headerLogoContainer">
+                  <h3 id="topLogo"><a href="#">JAMZONE</a></h3>
+              </div>
+              <ul id="navLinks">
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+              </ul>
+          </div>
+      </div>
+      <div id="bottomHeader">
+          <ul>
+              <li><a href="Jamzone.html">HOME</a></li>
+      
+              <li id="gamesDropDown">
+                  <a href="JamzoneGamePage.html">GAMES</a> 
+                  <ul class="dropdown">
+                      <li><a href="action.html">ACTION</a></li>
+                      <li><a href="roleplay.html">ROLEPLAY</a></li>
+                      <li><a href="adventure.html">ADVENTURE</a></li>
+                      <li><a href="strategy.html">STRATEGY</a></li>
+                      <li><a href="simulation.html">SIMULATION</a></li>
+                      <li><a href="sports.html">SPORTS & RACING</a></li>
+                  </ul>
+              </li>
+      
+              <li><a href="publish.html">PUBLISH</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="topSection">
+        <h1>SPORTS & RACING GAMES</h1>
+      
+        <div id="genreSelect">
+          <ul>
+            <li><a href="action.html">ACTION</a></li>
+            <li><a href="roleplay.html">ROLEPLAY</a></li>
+            <li><a href="strategy.html">STRATEGY</a></li>
+            <li><a href="adventure.html">ADVENTURE</a></li>
+            <li><a href="simulation.html">SIMULATION</a></li>
+            <li><a href="sports.html">SPORTS & RACING</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="filterBarSection">
+        <div id="filterBar">
+          <div id="topBar">
+            <ul>
+              <li><a href="#">FEATURED</a></li>
+              <li><a href="#">HOT</a></li>
+              <li><a href="#">BEST</a></li>
+              <li><a href="#">NEW</a></li>
+            </ul>
+          </div>
+      
+          <div id="bottomBar">
+            <ul>
+              <li id="priceDropDown">
+                <a href="#">PRICE</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="free-name-your-price">
+                      Free/Name your price
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="on-sale">
+                      On sale
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="paid">
+                      Paid
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="300-or-less">
+                      ₱300 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="900-or-less">
+                      ₱900 or less
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="price" value="1700-or-less">
+                      ₱1700 or less
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="osDropDown">
+                <a href="#">OS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="windows">
+                      Windows
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="mac">
+                      Mac
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="linux">
+                      Linux
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="os" value="other">
+                      Other
+                    </label>
+                  </li  value="other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="maturityDropDown">
+                <a href="#">MATURITY</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="all-ages">
+                      All Ages
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="teen-content">
+                      Teen Content
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="maturity" value="mature-content">
+                      Mature Content
+                    </label>
+                  </li>
+                </ul>
+              </li>
+      
+              <li id="statusDropDown">
+                <a href="#">STATUS</a>
+                <ul class="dropdown">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="complete">
+                      Complete
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="early-access">
+                      Early Access
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="status" value="devlog">
+                      Devlog
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>     
+
+      <section id="gameCardSection">
+        <div id="gameCardList">
+          <!-- Sports Games -->
+          <!-- Game Card 1 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide1" id="slide1-1" checked>
+              <input type="radio" name="slide1" id="slide1-2">
+              <input type="radio" name="slide1" id="slide1-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/newStarGp.jpg" alt="Cruelty Squad screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/newStarGp2.jpg" alt="Cruelty Squad screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/newStarGp3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide1-3" class="prev slide1-prev-from-1">&#10094;</label>
+                <label for="slide1-1" class="prev slide1-prev-from-2">&#10094;</label>
+                <label for="slide1-2" class="prev slide1-prev-from-3">&#10094;</label>
+                <label for="slide1-2" class="next slide1-next-from-1">&#10095;</label>
+                <label for="slide1-3" class="next slide1-next-from-2">&#10095;</label>
+                <label for="slide1-1" class="next slide1-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>NEW STAR GP</h1>
+              <ul>
+                <li>ARCADE</li>
+                <li>SPORTS & RACING</li>
+                <li>MULTIPLAYER</li>
+              </ul>
+              <p>New Star GP is a fast and exciting arcade motorsport game with crisp retro visuals. Play career mode and work your way through decades of racing while upgrading your car and your support team... or chase high scores in championship mode on your own or in split-screen with up to three friends!</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 2 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide2" id="slide2-1" checked>
+              <input type="radio" name="slide2" id="slide2-2">
+              <input type="radio" name="slide2" id="slide2-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/aeroGPX.jpg" alt="Raw Metal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/aeroGPX2.jpg" alt="Raw Metal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/aeroGPX3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide2-3" class="prev slide2-prev-from-1">&#10094;</label>
+                <label for="slide2-1" class="prev slide2-prev-from-2">&#10094;</label>
+                <label for="slide2-2" class="prev slide2-prev-from-3">&#10094;</label>
+                <label for="slide2-2" class="next slide2-next-from-1">&#10095;</label>
+                <label for="slide2-3" class="next slide2-next-from-2">&#10095;</label>
+                <label for="slide2-1" class="next slide2-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>AERO GPX</h1>
+              <ul>
+                <li>COMBAT RACING</li>
+                <li>SPORTS & RACING</li>
+                <li>FUTURISTIC</li>
+              </ul>
+              <p>Aero GPX is an anti-gravity racer focused on high velocity, flight, machine-to-machine combat, and responsive controls that are easy to pick up but difficult to master. Fight for the best position possible with high speeds, risky maneuvers, and visceral attacks!</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 3 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide3" id="slide3-1" checked>
+              <input type="radio" name="slide3" id="slide3-2">
+              <input type="radio" name="slide3" id="slide3-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/F1retro.jpg" alt="Deep Rock Galactic screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/F1retro2.jpg" alt="Deep Rock Galactic screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/F1retro3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide3-3" class="prev slide3-prev-from-1">&#10094;</label>
+                <label for="slide3-1" class="prev slide3-prev-from-2">&#10094;</label>
+                <label for="slide3-2" class="prev slide3-prev-from-3">&#10094;</label>
+                <label for="slide3-2" class="next slide3-next-from-1">&#10095;</label>
+                <label for="slide3-3" class="next slide3-next-from-2">&#10095;</label>
+                <label for="slide3-1" class="next slide3-next-from-3">&#10095;</label>
+              </div>
+            </div>
+            
+            <div class="cardText">
+              <h1>FORMULA RETRO RACING</h1>
+              <ul>
+                <li>RETRO</li>
+                <li>SPORTS & RACING</li>
+                <li>FAST-PACED</li>
+              </ul>
+              <p>Formula Retro Racing is a retro style arcade racing game that's influenced by the classic arcade racing games of the early 90's.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 4 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide4" id="slide4-1" checked>
+              <input type="radio" name="slide4" id="slide4-2">
+              <input type="radio" name="slide4" id="slide4-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/InertialDrift.jpg" alt="Doom Eternal screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/InertialDrift2.jpg" alt="Doom Eternal screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/InertialDrift3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide4-3" class="prev slide4-prev-from-1">&#10094;</label>
+                <label for="slide4-1" class="prev slide4-prev-from-2">&#10094;</label>
+                <label for="slide4-2" class="prev slide4-prev-from-3">&#10094;</label>
+                <label for="slide4-2" class="next slide4-next-from-1">&#10095;</label>
+                <label for="slide4-3" class="next slide4-next-from-2">&#10095;</label>
+                <label for="slide4-1" class="next slide4-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>INERTIAL DRIFT</h1>
+              <ul>
+                <li>ARCADE</li>
+                <li>SPORTS & RACING</li>
+                <li>PVP</li>
+              </ul>
+              <p>An arcade racer that tears up the rule book with innovative twin-stick controls, completely re-imagined driving mechanics and a huge roster of fiercely individual cars and tracks.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 5 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide5" id="slide5-1" checked>
+              <input type="radio" name="slide5" id="slide5-2">
+              <input type="radio" name="slide5" id="slide5-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/SuperWoodenGp.jpg" alt="Elden Ring screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/SuperWoodenGp2.jpg" alt="Elden Ring screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/SuperWoodenGp3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide5-3" class="prev slide5-prev-from-1">&#10094;</label>
+                <label for="slide5-1" class="prev slide5-prev-from-2">&#10094;</label>
+                <label for="slide5-2" class="prev slide5-prev-from-3">&#10094;</label>
+                <label for="slide5-2" class="next slide5-next-from-1">&#10095;</label>
+                <label for="slide5-3" class="next slide5-next-from-2">&#10095;</label>
+                <label for="slide5-1" class="next slide5-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>SUPER WOODEN GP 2</h1>
+              <ul>
+                <li>RETRO</li>
+                <li>SPORTS & RACING</li>
+                <li>2.5D</li>
+              </ul>
+              <p>Super Woden GP 2 is a love letter to the world of motor sports, offering a unique experience. Arcade-style isometric racing meets unrivaled campaign depth and a huge variety of vehicles to buy, sell and unlock.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 6 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide6" id="slide6-1" checked>
+              <input type="radio" name="slide6" id="slide6-2">
+              <input type="radio" name="slide6" id="slide6-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/VictorHeat.jpg" alt="Devil May Cry 5 screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/VictorHeat2.jpg" alt="Devil May Cry 5 screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/VictorHeat3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide6-3" class="prev slide6-prev-from-1">&#10094;</label>
+                <label for="slide6-1" class="prev slide6-prev-from-2">&#10094;</label>
+                <label for="slide6-2" class="prev slide6-prev-from-3">&#10094;</label>
+                <label for="slide6-2" class="next slide6-next-from-1">&#10095;</label>
+                <label for="slide6-3" class="next slide6-next-from-2">&#10095;</label>
+                <label for="slide6-1" class="next slide6-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>VICTOR HEAT RALLY</h1>
+              <ul>
+                <li>RETRO</li>
+                <li>RACING</li>
+                <li>STYLISH</li>
+              </ul>
+              <p>Welcome to VHR! Unlock the secrets of speed in this turbocharged neo super scaler arcade racing experience. Dominate the track & drift your way to the finish line on the road to becoming the VHRC champion.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 7 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide7" id="slide7-1" checked>
+              <input type="radio" name="slide7" id="slide7-2">
+              <input type="radio" name="slide7" id="slide7-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/speedRunners.jpg" alt="Ghostrunner screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/speedRunners2.jpg" alt="Ghostrunner screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/speedRunners3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide7-3" class="prev slide7-prev-from-1">&#10094;</label>
+                <label for="slide7-1" class="prev slide7-prev-from-2">&#10094;</label>
+                <label for="slide7-2" class="prev slide7-prev-from-3">&#10094;</label>
+                <label for="slide7-2" class="next slide7-next-from-1">&#10095;</label>
+                <label for="slide7-3" class="next slide7-next-from-2">&#10095;</label>
+                <label for="slide7-1" class="next slide7-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>SPEEDRUNNERS</h1>
+              <ul>
+                <li>MULTIPLAYER</li>
+                <li>RACING</li>
+                <li>2D</li>
+              </ul>
+              <p>Cut-throat multiplayer running game that pits 4 players against each other, locally and/or online. Run, jump, swing around, and use devious weapons and pick-ups to knock opponents off-screen! One of the most competitive games you'll ever play.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 8 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide8" id="slide8-1" checked>
+              <input type="radio" name="slide8" id="slide8-2">
+              <input type="radio" name="slide8" id="slide8-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/HeadingOut.jpg" alt="Hotline Miami screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HeadingOut2.jpg" alt="Hotline Miami screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/HeadingOut3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide8-3" class="prev slide8-prev-from-1">&#10094;</label>
+                <label for="slide8-1" class="prev slide8-prev-from-2">&#10094;</label>
+                <label for="slide8-2" class="prev slide8-prev-from-3">&#10094;</label>
+                <label for="slide8-2" class="next slide8-next-from-1">&#10095;</label>
+                <label for="slide8-3" class="next slide8-next-from-2">&#10095;</label>
+                <label for="slide8-1" class="next slide8-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>HEADING OUT</h1>
+              <ul>
+                <li>VISUAL NOVEL</li>
+                <li>RACING</li>
+                <li>ROUGELIKE</li>
+              </ul>
+              <p>An immersive driving game that meets a story-rich experience, passionately inspired by cult classic road movies. Each run offers a unique combination of races, chases, difficult decisions, and colorful characters. As you drive across the USA, every decision you make impacts your playthrough.</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 9 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide9" id="slide9-1" checked>
+              <input type="radio" name="slide9" id="slide9-2">
+              <input type="radio" name="slide9" id="slide9-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/NightRun.jpg" alt="Sekiro screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/NightRun2.jpg" alt="Sekiro screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/NightRun3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide9-3" class="prev slide9-prev-from-1">&#10094;</label>
+                <label for="slide9-1" class="prev slide9-prev-from-2">&#10094;</label>
+                <label for="slide9-2" class="prev slide9-prev-from-3">&#10094;</label>
+                <label for="slide9-2" class="next slide9-next-from-1">&#10095;</label>
+                <label for="slide9-3" class="next slide9-next-from-2">&#10095;</label>
+                <label for="slide9-1" class="next slide9-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>NIGHT-RUNNERS™ PROLOGUE</h1>
+              <ul>
+                <li>1990's</li>
+                <li>RACING</li>
+                <li>RPG</li>
+              </ul>
+              <p>Descend into the underworld of Japanese street racing. Set between 1990-2009, join the local street racing crews in their battle for territory control. Explore the real location open world(s), compete in wager races, battle other crews and upgrade your vehicles with detailed car customization. </p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+
+          <!-- Game Card 10 -->
+          <div class="gameCardContainer">
+            <div class="mediaCarousel">
+              <input type="radio" name="slide10" id="slide10-1" checked>
+              <input type="radio" name="slide10" id="slide10-2">
+              <input type="radio" name="slide10" id="slide10-3">
+
+              <div class="slides">
+                <div class="slide">
+                  <img src="IMAGES/artOfrally.jpg" alt="Metal Gear Rising screenshot 1">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/artOfrally2.jpg" alt="Metal Gear Rising screenshot 2">
+                </div>
+                <div class="slide">
+                  <img src="IMAGES/artOfrally3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="carousel-nav">
+                <label for="slide10-3" class="prev slide10-prev-from-1">&#10094;</label>
+                <label for="slide10-1" class="prev slide10-prev-from-2">&#10094;</label>
+                <label for="slide10-2" class="prev slide10-prev-from-3">&#10094;</label>
+                <label for="slide10-2" class="next slide10-next-from-1">&#10095;</label>
+                <label for="slide10-3" class="next slide10-next-from-2">&#10095;</label>
+                <label for="slide10-1" class="next slide10-next-from-3">&#10095;</label>
+              </div>
+            </div>
+
+            <div class="cardText">
+              <h1>ART OF RALLY</h1>
+              <ul>
+                <li>DIFFICULT</li>
+                <li>RACING</li>
+                <li>PHYSICS</li>
+              </ul>
+              <p>Race in the golden era of rally. Drive iconic cars from the 60s to Group B on challenging stages through stylized environments inspired by real worldwide locations. Will you master the art of rally?</p>
+              <div id="gameCardButton">
+                <a href="#">SEE MORE</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#" class="arrow">‹</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="arrow">›</a>
+      </div>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div id="newsContainer">
+                <h3>FOLLOW FOR NEWS</h3>
+                <h3 id="newsButton"><a href="#">@JAMZONE <b>on Facebook</b></a></h3>
+            </div>
+
+            <div id="socialContainer">
+                <h3>SOCIAL</h3>
+            </div>
+
+            <div id="footerLogoContainer">
+                <h3 id="bottomLogo"><a href="#">JAMZONE</a></h3>
+                <p>&copy;Copyright 2025 Jamzone.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
